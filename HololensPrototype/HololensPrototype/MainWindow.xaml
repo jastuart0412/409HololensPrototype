@@ -1,0 +1,15 @@
+﻿<Window x:Class="HololensPrototype.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HololensPrototype"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="Scenarios" Content="Manage Scenarios" HorizontalAlignment="Left" Margin="193,80,0,0" VerticalAlignment="Top" Width="148" Click="openWindow"/>
+        <Button x:Name="Surveys" Content="Manage Surveys" HorizontalAlignment="Left" Margin="193,117,0,0" VerticalAlignment="Top" Width="148" Click="openSurveyWndow"/>
+        <Button x:Name="SurveyAnswers" Content="Manage Surveys Answers" HorizontalAlignment="Left" Margin="193,156,0,0" VerticalAlignment="Top" Width="148" Click="openSurveyAnswerWindow"/>
+
+    </Grid>
+</Window>
