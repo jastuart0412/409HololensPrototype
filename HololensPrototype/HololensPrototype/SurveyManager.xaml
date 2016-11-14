@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="SurveyManager" Height="300" Width="300">
     <Grid>
-        
+        <Button x:Name="UploadSurvery" Content="Upload Survey" HorizontalAlignment="Left" Margin="100,10,0,0" VerticalAlignment="Top" Width="100" Click="UploadSurvery_Click"/>
+
     </Grid>
 </Window>

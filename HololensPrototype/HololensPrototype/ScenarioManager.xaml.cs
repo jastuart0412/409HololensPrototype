@@ -23,5 +23,17 @@ namespace HololensPrototype
         {
             InitializeComponent();
         }
+
+        private void UploadScenario_Click(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.OpenFileDialog dialogWindow = new Microsoft.Win32.OpenFileDialog();
+
+            Nullable<bool> file = dialogWindow.ShowDialog();
+
+            if(file==true)
+            {
+
+            }
+        }
     }
 }

@@ -6,7 +6,5 @@
         xmlns:local="clr-namespace:HololensPrototype"
         mc:Ignorable="d"
         Title="SurveyAnswerManager" Height="300" Width="300">
-    <Grid>
-        
-    </Grid>
+    <Grid/>
 </Window>
