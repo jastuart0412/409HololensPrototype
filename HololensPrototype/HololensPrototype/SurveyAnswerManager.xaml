@@ -6,5 +6,10 @@
         xmlns:local="clr-namespace:HololensPrototype"
         mc:Ignorable="d"
         Title="SurveyAnswerManager" Height="300" Width="300">
-    <Grid/>
+    <Grid>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="249" Margin="10,10,0,0" VerticalAlignment="Top" Width="272">
+            <ListBoxItem Content="One"/>
+            <ListBoxItem Content="Two"/>
+        </ListBox>
+    </Grid>
 </Window>

@@ -8,6 +8,13 @@
         Title="SurveyManager" Height="300" Width="300">
     <Grid>
         <Button x:Name="UploadSurvery" Content="Upload Survey" HorizontalAlignment="Left" Margin="100,10,0,0" VerticalAlignment="Top" Width="100" Click="UploadSurvery_Click"/>
+        <DataGrid x:Name="SurveyGrid" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Height="224" Width="272">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Select"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="File Name"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Upload Date"/>
+            </DataGrid.Columns>
+        </DataGrid>
 
     </Grid>
 </Window>

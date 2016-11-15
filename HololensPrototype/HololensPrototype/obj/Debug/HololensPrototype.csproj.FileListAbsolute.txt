@@ -18,3 +18,27 @@ c:\users\ston\documents\visual studio 2015\Projects\HololensPrototype\HololensPr
 c:\users\ston\documents\visual studio 2015\Projects\HololensPrototype\HololensPrototype\obj\Debug\ScenarioManager.baml
 c:\users\ston\documents\visual studio 2015\Projects\HololensPrototype\HololensPrototype\obj\Debug\SurveyAnswerManager.baml
 c:\users\ston\documents\visual studio 2015\Projects\HololensPrototype\HololensPrototype\obj\Debug\SurveyManager.baml
+C:\Users\Ston\documents\visual studio 2015\Projects\HololensPrototype\HololensPrototype\bin\Debug\MySql.Data.dll
+C:\Users\Ston\documents\visual studio 2015\Projects\HololensPrototype\HololensPrototype\bin\Debug\MySql.Data.xml
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\bin\Debug\HololensPrototype.exe.config
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\HololensPrototype.exe
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\HololensPrototype.pdb
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\bin\Debug\HololensPrototype.exe
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\bin\Debug\HololensPrototype.pdb
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\bin\Debug\MySql.Data.dll
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\bin\Debug\MySql.Data.xml
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\HololensPrototype.csprojResolveAssemblyReference.cache
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\MainWindow.g.cs
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\ScenarioManager.g.cs
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\SurveyAnswerManager.g.cs
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\SurveyManager.g.cs
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\App.g.cs
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\HololensPrototype_MarkupCompile.cache
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\HololensPrototype_MarkupCompile.lref
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\MainWindow.baml
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\ScenarioManager.baml
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\SurveyAnswerManager.baml
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\SurveyManager.baml
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\HololensPrototype.g.resources
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\HololensPrototype.Properties.Resources.resources
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\HololensPrototype.csproj.GenerateResource.Cache
