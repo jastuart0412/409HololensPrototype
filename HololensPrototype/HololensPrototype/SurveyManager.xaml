@@ -1,20 +1,21 @@
-﻿<Window x:Class="HololensPrototype.SurveyManager"
+﻿<Window x:Name="SurveyWindow" x:Class="HololensPrototype.SurveyManager"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HololensPrototype"
         mc:Ignorable="d"
-        Title="SurveyManager" Height="300" Width="300">
+        Title="SurveyManager" Height="600" Width="700" Loaded="windowLoaded">
     <Grid>
-        <Button x:Name="UploadSurvery" Content="Upload Survey" HorizontalAlignment="Left" Margin="100,10,0,0" VerticalAlignment="Top" Width="100" Click="UploadSurvery_Click"/>
-        <DataGrid x:Name="SurveyGrid" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Height="224" Width="272">
-            <DataGrid.Columns>
-                <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Select"/>
-                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="File Name"/>
-                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Upload Date"/>
-            </DataGrid.Columns>
-        </DataGrid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="299*"/>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="298*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="UploadSurvery" Content="Upload Survey" HorizontalAlignment="Left" Margin="100,35,0,0" VerticalAlignment="Top" Width="134" Click="UploadSurvery_Click" Grid.Column="2" Height="50"/>
+        <DataGrid x:Name="SurveyGrid" HorizontalAlignment="Left" CanUserAddRows="False" Margin="10,35,0,0" VerticalAlignment="Top" Height="524" Width="343" Grid.ColumnSpan="2"/>
+        <Button x:Name="DeleteSurveyFiles" Content="Delete Survey File(s)" HorizontalAlignment="Left" Margin="100,90,0,0" VerticalAlignment="Top" Width="134" Grid.Column="2" Height="50" Click="DeleteSurveyFiles_Click"/>
+        <Button x:Name="SendSurvey" Content="Send to Hololens" Grid.Column="2" HorizontalAlignment="Left" Height="50" Margin="100,145,0,0" VerticalAlignment="Top" Width="134" Click="SendSurvey_Click"/>
 
     </Grid>
 </Window>
