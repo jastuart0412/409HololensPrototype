@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HololensPrototype"
         mc:Ignorable="d"
-        Title="SurveyAnswerManager" Height="300" Width="300">
+        Title="SurveyAnswerManager" Height="599" Width="600">
     <Grid>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="249" Margin="10,10,0,0" VerticalAlignment="Top" Width="272">
-            <ListBoxItem Content="One"/>
-            <ListBoxItem Content="Two"/>
-        </ListBox>
+        <ListBox x:Name="AnswersList" HorizontalAlignment="Left" Height="548" Margin="10,10,0,0" VerticalAlignment="Top" Width="272"/>
+        <ComboBox x:Name="SurveySelector" HorizontalAlignment="Left" Margin="411,10,0,0" VerticalAlignment="Top" Width="149" Height="29" Loaded="loadSurveySelector" SelectionChanged="surveySelected"/>
+        <Label x:Name="label" Content="Survey:" HorizontalAlignment="Left" Margin="358,9,0,0" VerticalAlignment="Top" Height="30"/>
+        <Label x:Name="label_Copy" Content="Question" HorizontalAlignment="Left" Margin="348,65,0,0" VerticalAlignment="Top" Height="30"/>
+        <ComboBox x:Name="QuestionSelector" HorizontalAlignment="Left" Margin="411,65,0,0" VerticalAlignment="Top" Width="149" Height="29" SelectionChanged="QuestionSelector_SelectionChanged"/>
     </Grid>
 </Window>

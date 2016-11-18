@@ -82,14 +82,14 @@ namespace HololensPrototype
                 {
                     cmd.Connection = conn;
                     conn.Open();
-                    cmd.CommandText = "SELECT * FROM Survey;";
+                    cmd.CommandText = "SELECT fileName,uploadDate FROM Survey;";
                     MySqlDataReader reader = cmd.ExecuteReader();
 
                     while (reader.Read())
                     {
                         string x = reader.GetString(0);
-                        int y = reader.GetInt32(1);
-                        DateTime date = reader.GetDateTime(3);
+                        //int y = reader.GetInt32(1);
+                        DateTime date = reader.GetDateTime(1);
                         MyCollection.Add(new SurveyTemplate { selected = false, surveyName = x, uploadDate = date.Month + "/" + date.Day + "/" + date.Year });
                         //byte[] buff = new byte[y];
                         //reader.GetBytes(2, (long)0, buff, 0, y);
