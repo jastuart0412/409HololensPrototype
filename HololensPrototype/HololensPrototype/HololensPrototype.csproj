@@ -56,6 +56,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AnonymousIdentity.cs" />
+    <Compile Include="AuthenticationService.cs" />
+    <Compile Include="AuthenticationViewModel.cs" />
+    <Compile Include="CustomIdentity.cs" />
+    <Compile Include="CustomPrincipal.cs" />
+    <Compile Include="DelegateCommand.cs" />
+    <Compile Include="LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ScenarioManager.xaml.cs">
       <DependentUpon>ScenarioManager.xaml</DependentUpon>
     </Compile>
@@ -65,6 +74,10 @@
     <Compile Include="SurveyManager.xaml.cs">
       <DependentUpon>SurveyManager.xaml</DependentUpon>
     </Compile>
+    <Page Include="LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

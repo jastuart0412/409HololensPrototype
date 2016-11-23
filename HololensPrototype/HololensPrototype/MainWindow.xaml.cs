@@ -12,18 +12,34 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Security.Permissions;
 
 namespace HololensPrototype
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    [PrincipalPermission(SecurityAction.Demand)]
+    public partial class MainWindow : Window, IView
     {
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        #region IView Members
+        public IViewModel ViewModel
+        {
+            get
+            {
+                return DataContext as IViewModel;
+            }
+            set
+            {
+                DataContext = value;
+            }
+        }
+        #endregion
 
         private void openWindow(object sender, RoutedEventArgs e)
         {
