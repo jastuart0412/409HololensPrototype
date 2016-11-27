@@ -12,12 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Threading;
+using System.Windows.Forms;
+using System.Security.Permissions;
+using System.Security.Principal;
 
 namespace HololensPrototype
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    [PrincipalPermission(SecurityAction.Demand)]
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -41,6 +46,12 @@ namespace HololensPrototype
         {
             SurveyAnswerManager window = new SurveyAnswerManager();
             window.Show();
+        }
+
+        private void logOut(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Forms.Application.Restart();
+            System.Windows.Application.Current.Shutdown();
         }
     }
 }
