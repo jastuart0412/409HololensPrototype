@@ -28,6 +28,7 @@ namespace HololensPrototype
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainViewModel();
         }
 
         private void openWindow(object sender, RoutedEventArgs e)

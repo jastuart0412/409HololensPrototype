@@ -7,13 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Grid.Resources>
-            <local:VisibilityConverter x:Key="VisibilityConverter" />
-        </Grid.Resources>
         <Button x:Name="Scenarios" Content="Manage Scenarios" HorizontalAlignment="Left" Margin="193,80,0,0" VerticalAlignment="Top" Width="148" Click="openWindow" 
-                Visibility="{Binding Path=CurrentPrincipal, Converter={StaticResource VisibilityConverter}, ConverterParameter='Developer'}"/>
-        <Button x:Name="Surveys" Content="Manage Surveys" HorizontalAlignment="Left" Margin="193,117,0,0" VerticalAlignment="Top" Width="148" Click="openSurveyWndow"/>
-        <Button x:Name="SurveyAnswers" Content="Manage Survey Answers" HorizontalAlignment="Left" Margin="193,156,0,0" VerticalAlignment="Top" Width="148" Click="openSurveyAnswerWindow"/>
+                Visibility="{Binding scenarioButtonVisibility}"/>
+        <Button x:Name="Surveys" Content="Manage Surveys" HorizontalAlignment="Left" Margin="193,117,0,0" VerticalAlignment="Top" Width="148" Click="openSurveyWndow"
+                Visibility="{Binding surveyButtonVisibility}"/>
+        <Button x:Name="SurveyAnswers" Content="Manage Survey Answers" HorizontalAlignment="Left" Margin="193,156,0,0" VerticalAlignment="Top" Width="148" Click="openSurveyAnswerWindow"
+                Visibility="{Binding surveyAnswerButtonVisibility}"/>
         <Button x:Name="LogOut" Content="Logout" HorizontalAlignment="Left" Margin="193,250,0,0" VerticalAlignment="Top" Width="148" Click="logOut"/>
 
     </Grid>

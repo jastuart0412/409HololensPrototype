@@ -14,12 +14,15 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Security.Principal;
+using System.Security.Permissions;
 
 namespace HololensPrototype
 {
     /// <summary>
     /// Interaction logic for ScenarioManager.xaml
     /// </summary>
+    [PrincipalPermission(SecurityAction.Demand, Role = "Developer")]
     public partial class ScenarioManager : Window
     {
         public ObservableCollection<SurveyTemplate> MyCollection;

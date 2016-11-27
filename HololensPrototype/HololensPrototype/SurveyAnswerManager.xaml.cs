@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -19,6 +20,9 @@ namespace HololensPrototype
     /// <summary>
     /// Interaction logic for SurveyAnswerManager.xaml
     /// </summary>
+    [PrincipalPermission(SecurityAction.Demand, Role = "Developer")]
+    [PrincipalPermission(SecurityAction.Demand, Role = "Tester")]
+    [PrincipalPermission(SecurityAction.Demand, Role = "Evaluator")]
     public partial class SurveyAnswerManager : Window
     {
         public ObservableCollection<String> surveys;
