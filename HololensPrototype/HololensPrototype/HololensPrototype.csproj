@@ -60,6 +60,7 @@
     <Compile Include="LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainViewModel.cs" />
     <Compile Include="ScenarioManager.xaml.cs">
       <DependentUpon>ScenarioManager.xaml</DependentUpon>
     </Compile>
@@ -69,7 +70,6 @@
     <Compile Include="SurveyManager.xaml.cs">
       <DependentUpon>SurveyManager.xaml</DependentUpon>
     </Compile>
-    <Compile Include="VisibilityConverter.cs" />
     <Page Include="LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
