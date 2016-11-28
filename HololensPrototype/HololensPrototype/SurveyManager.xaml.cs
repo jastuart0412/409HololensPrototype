@@ -104,24 +104,40 @@ namespace HololensPrototype
 
         private void DeleteSurveyFiles_Click(object sender, RoutedEventArgs e)
         {
+            List<SurveyTemplate> removedItems = new List<SurveyTemplate>();
             using (MySqlConnection conn = new MySqlConnection("Server=mysql-509.cs.iastate.edu; Database=db509t03;User Id=dbu509t03;Password = zebr8p@AgEsU;"))
             {
                 using (MySqlCommand cmd = new MySqlCommand())
                 {
                     cmd.Connection = conn;
                     conn.Open();
-                    foreach (SurveyTemplate s in SurveyGrid.SelectedItems)
+                    foreach (SurveyTemplate s in SurveyGrid.ItemsSource)
                     {
-                        cmd.CommandText = "DELETE FROM Survey WHERE fileName = '" + s.surveyName + "';";
-                        cmd.ExecuteNonQuery();
+                        if (s.selected)
+                        {
+                            cmd.CommandText = "DELETE FROM Survey WHERE fileName = '" + s.surveyName + "';";
+                            cmd.ExecuteNonQuery();
+                            removedItems.Add(s);
+                        }
                     }
                 }
+            }
+            foreach (SurveyTemplate s in removedItems)
+            {
+                MyCollection.Remove(s);
             }
         }
 
         private void SendSurvey_Click(object sender, RoutedEventArgs e)
         {
             //Send signal and file to hololens
+        }
+
+        private void MainMenu_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow window = new MainWindow();
+            window.Show();
+            this.Close();
         }
     }
 

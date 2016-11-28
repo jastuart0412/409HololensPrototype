@@ -35,18 +35,21 @@ namespace HololensPrototype
         {
             ScenarioManager window = new ScenarioManager();
             window.Show();
+            this.Close();
         }
 
         private void openSurveyWndow(object sender, RoutedEventArgs e)
         {
             SurveyManager window = new SurveyManager();
             window.Show();
+            this.Close();
         }
 
         private void openSurveyAnswerWindow(object sender, RoutedEventArgs e)
         {
             SurveyAnswerManager window = new SurveyAnswerManager();
             window.Show();
+            this.Close();
         }
 
         private void logOut(object sender, RoutedEventArgs e)

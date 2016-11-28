@@ -16,6 +16,7 @@
         <DataGrid x:Name="SurveyGrid" HorizontalAlignment="Left" CanUserAddRows="False" Margin="10,35,0,0" VerticalAlignment="Top" Height="524" Width="343" Grid.ColumnSpan="2"/>
         <Button x:Name="DeleteSurveyFiles" Content="Delete Survey File(s)" HorizontalAlignment="Left" Margin="100,90,0,0" VerticalAlignment="Top" Width="134" Grid.Column="2" Height="50" Click="DeleteSurveyFiles_Click"/>
         <Button x:Name="SendSurvey" Content="Send to Hololens" Grid.Column="2" HorizontalAlignment="Left" Height="50" Margin="100,145,0,0" VerticalAlignment="Top" Width="134" Click="SendSurvey_Click"/>
+        <Button x:Name="MainMenu" Content="Main Menu" HorizontalAlignment="Left" Margin="100,447,0,0" VerticalAlignment="Top" Width="134" Height="52" Click="MainMenu_Click" Grid.Column="2"/>
 
     </Grid>
 </Window>

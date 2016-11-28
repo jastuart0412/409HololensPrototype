@@ -42,3 +42,5 @@ C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPr
 C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\HololensPrototype.Properties.Resources.resources
 C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\HololensPrototype.csproj.GenerateResource.Cache
 C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\HololensPrototype.csprojResolveAssemblyReference.cache
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\LoginWindow.g.cs
+C:\Users\Ston\Documents\GitHub\409HololensPrototype\HololensPrototype\HololensPrototype\obj\Debug\LoginWindow.baml

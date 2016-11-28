@@ -104,5 +104,12 @@ namespace HololensPrototype
             }
             AnswersList.ItemsSource = surveyAnswers;
         }
+
+        private void MainMenu_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow window = new MainWindow();
+            window.Show();
+            this.Close();
+        }
     }
 }
