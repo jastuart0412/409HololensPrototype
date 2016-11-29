@@ -138,6 +138,7 @@ namespace HololensPrototype
                 }
                 i++;
             }
+            this.Close();
         }
     }
 }
