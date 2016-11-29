@@ -111,5 +111,11 @@ namespace HololensPrototype
             window.Show();
             this.Close();
         }
+
+        private void takeSurvey(object sender, RoutedEventArgs e)
+        {
+            SurveyWindow window = new SurveyWindow();
+            window.Show();
+        }
     }
 }

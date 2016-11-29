@@ -13,5 +13,6 @@
         <Label x:Name="label_Copy" Content="Question" HorizontalAlignment="Left" Margin="348,65,0,0" VerticalAlignment="Top" Height="30"/>
         <ComboBox x:Name="QuestionSelector" HorizontalAlignment="Left" Margin="411,65,0,0" VerticalAlignment="Top" Width="149" Height="29" SelectionChanged="QuestionSelector_SelectionChanged"/>
         <Button x:Name="MainMenu" Content="Main Menu" HorizontalAlignment="Left" Margin="411,410,0,0" VerticalAlignment="Top" Width="122" Height="52" Click="MainMenu_Click"/>
+        <Button x:Name="completeSurvey" Content="Complete a Survey" HorizontalAlignment="Left" Margin="411,275,0,0" VerticalAlignment="Top" Width="122" Height="40" Click="takeSurvey"/>
     </Grid>
 </Window>
