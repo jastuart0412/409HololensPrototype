@@ -49,8 +49,7 @@ namespace HololensPrototype
         {
             get
             {
-                if (CurrentPrincipal.IsInRole("Developer") ||
-                    CurrentPrincipal.IsInRole("Tester") ||
+                if (CurrentPrincipal.IsInRole("Tester") ||
                     CurrentPrincipal.IsInRole("Evaluator"))
                 {
                     return Visibility.Visible;
