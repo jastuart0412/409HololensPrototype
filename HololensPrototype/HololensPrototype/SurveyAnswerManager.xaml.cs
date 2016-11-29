@@ -20,7 +20,6 @@ namespace HololensPrototype
     /// <summary>
     /// Interaction logic for SurveyAnswerManager.xaml
     /// </summary>
-    [PrincipalPermission(SecurityAction.Demand, Role = "Developer")]
     [PrincipalPermission(SecurityAction.Demand, Role = "Tester")]
     [PrincipalPermission(SecurityAction.Demand, Role = "Evaluator")]
     public partial class SurveyAnswerManager : Window
